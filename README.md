@@ -1,4 +1,4 @@
-# 'Code and Care' | Laravel Task
+# 'Code & Care' | Laravel Task
 
 
 
@@ -9,9 +9,9 @@
     2. Choose necessary parameters in .env file
     3. Open cmd and run next:
         - php artisan migrate
-        - php artisan seed
+        - php artisan db:seed
    
 ##Scheduling
     TXML file will be is in a xml/users.xml
     For Scheduling you must create a cron job, and run
-    '''* * * * * php /path/to/artisan schedule:run >> /dev/null 2>&1'''
+    * * * * * php /path/to/artisan schedule:run >> /dev/null 2>&1
