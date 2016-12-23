@@ -11,6 +11,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        DB::table('hash_algorithms')->insert([
+            ['name' => 'md5'],
+            ['name' => 'sha1'],
+            ['name' => 'sha256'],
+            ['name' => 'crypt'],
+            ['name' => 'crc32'],
+
+        ]);
+        DB::table('vocabularies')->insert([
+            ['word' => 'Laravel'],
+            ['word' => 'Symfony'],
+            ['word' => 'PHP'],
+            ['word' => 'NodeJs'],
+            ['word' => 'Angular'],
+            ['word' => 'EcmaScript'],
+            ['word' => str_random(10)],
+        ]);
     }
 }

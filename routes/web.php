@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('hash', 'HashController');
+Route::get('/', 'HashController@index');
