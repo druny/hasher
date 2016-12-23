@@ -8,7 +8,7 @@ use App\Models\Vocabulary;
 use App\Models\User;
 use App\Models\UserHash;
 use App\Helpers\GeoHelper;
-use App\Http\Requests\ChechHashes;
+use App\Http\Requests\CheckHashes;
 use App\Helpers\HashHelper;
 
 class HashController extends Controller
