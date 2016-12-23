@@ -59,7 +59,7 @@ class HashController extends Controller
     /*
      * Get info and create new hashed words
      * */
-    public function store(ChechHashes $request)
+    public function store(CheckHashes $request)
     {
         $geoData = GeoHelper::getInfo();
 
