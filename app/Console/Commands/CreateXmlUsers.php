@@ -41,7 +41,7 @@ class CreateXmlUsers extends Command
     {
         $users = User::all()->toArray();
         $xml = SimpleXmlHelper::create($users);
-        $handle = fopen(storage_path('xml/users.xml'), 'w');
+        $handle = fopen(storage_path('app/users.xml'), 'w');
         fwrite($handle, $xml);
         $this->info('Xml files are created');
     }
